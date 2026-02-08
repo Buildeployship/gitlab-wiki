@@ -7,7 +7,7 @@ mirror-to-github:
   before_script:
     - apk add --no-cache git
   script:
-    - git remote add github https://$GITHUB_TOKEN@github.com/buildeployship/$CI_PROJECT_NAME.git
-    - git push github HEADmain --force
+    - git remote add github https://$GITHUB_TOKEN@github.com/Buildeployship/$CI_PROJECT_NAME.git
+    - git push github HEAD:main --force
   only:
     - main
